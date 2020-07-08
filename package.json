@@ -1,0 +1,18 @@
+{
+  "name": "nodemailer-server",
+  "version": "1.0.0",
+  "description": "A server used just to send emails.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Francisco Chiarino",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "nodemailer": "^6.4.10"
+  }
+}
