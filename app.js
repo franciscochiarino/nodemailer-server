@@ -16,12 +16,13 @@ const port = process.env.PORT || 3001;
 // Middlewares
 app.use(express.json());
 app.use(setCors);
+app.use(express.static("public"));
 
 // Routes
 app.use('/', indexRoute);
 app.use('/contact', contactRoute);
 
-// Errors
+// Error Handler
 app.use((req, res, next) => {
   next(createError(404))
 });
